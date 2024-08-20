@@ -32,7 +32,7 @@ fieldset{
     border: none;
 }
 
-.exemplo{
+.lista{
     text-align: center;
     display: flex;
     align-items: center; 
@@ -41,8 +41,6 @@ fieldset{
     margin-bottom: 2rem;
 }
 
-.exemplo img{
-    height: 1rem;
-    width: 5%;
+.lista button{
     text-align: end;
 }
