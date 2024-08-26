@@ -1,3 +1,4 @@
+
 const respostaAPI = [
     { "id": 1, "descricao": "Varrer a sala" }, // Variável que contém um array de objetos em formato JSON 
     { "id": 2, "descricao": "Revisar a aula de BD" }, // Cada objeto representa uma tarefa específica com  2 atributos 
@@ -14,7 +15,7 @@ function init(){
 
 function carregarLista(){
     let contador = -1;
-    const listContainer = document.getElementById("task-list");
+    const listContainer = document.getElementsByClassName("lista");
     listContainer.innerHTML = '';
 
     while( respostaAPI.length > 0 && ++contador < respostaAPI.length){
@@ -22,6 +23,7 @@ function carregarLista(){
                 <fieldset>
                     <input id="primeiro" type="checkbox">
                     <label for="primeiro">Exemplo 1</label>
+                    <span class="text">${respostaAPI[contador].descricao}</span>
                     <button class="material-symbols-outlined">edit</button>
                     <button class="material-symbols-outlined">delete</button> 
                 </fieldset>
