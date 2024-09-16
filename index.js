@@ -10,23 +10,23 @@ const respostaAPI = [
 const taskList = document.getElementsByClassName("lista"); // dúvida se está correto a seleção
 
 function init(){ 
-    CarregarLista(); // A função init é utilizada para inicializar o carregamento das tarefas - chama a função ao lado
+    carregarLista(); // A função init é utilizada para inicializar o carregamento das tarefas - chama a função ao lado
 }
 
 function carregarLista(){
     let contador = -1;
     const listContainer = document.getElementsByClassName("lista");
-    listContainer.innerHTML = '';
+    listContainer.innerHTML = '<form action="">';
 
-    while( respostaAPI.length > 0 && ++contador < respostaAPI.length){
-        listContainer.innerHTML += `<form action="">
+    while( respostaAPI.length > 0 && ++contador < respostaAPI.length){ //seguir a posição dos arrays - numeração
+        listContainer.innerHTML += `
                 <fieldset>
                     <input id="primeiro" type="checkbox">
                     <label for="primeiro">Exemplo 1</label>
                     <span class="text">${respostaAPI[contador].descricao}</span>
                     <button class="material-symbols-outlined">edit</button>
                     <button class="material-symbols-outlined">delete</button> 
-                </fieldset>
-            </form>`;
+                </fieldset>`;
     }
+    listContainer.innerHTML == '</form>';
 }
