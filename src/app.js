@@ -9,6 +9,6 @@ const PORT = 3300;
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.listen(PORT, () => {
+app.listen(PORT, () => { //Inicia o servidor na porta especificada (PORT) e executa a função de callback quando o servidor estiver pronto.
     console.log(`Server is running on http://localhost:${PORT}`);
 });
