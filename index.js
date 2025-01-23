@@ -5,8 +5,8 @@ const app = express()
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 
-app.get('/', (require, repost) => {
-    repost.render("home")
+app.get('/', (require, riposte) => {
+    riposte.render("home")
 })
 
 app.listen(3000, () => {
