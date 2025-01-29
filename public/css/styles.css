@@ -6,5 +6,10 @@
 }
 
 :root{
-    --bg-header-mobile:url()
+    --bg-header-mobile: url(../imagens/bg-header-mobile-light.png);
+}
+
+header{
+    background-image: var(--bg-header-mobile);
+
 }
