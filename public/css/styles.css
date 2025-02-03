@@ -68,11 +68,30 @@ main{
     padding-inline: 1.5rem;
 }
 
-.tarefas{
+.tarefas {
     background: var(--bg-tarefas);
     box-shadow: var(--box-shadow);
+    border-radius: 0.3125rem;
+    margin-top: -1.5rem;
 }
 
-.tarefas .tarefa{
+.tarefas .tarefa {
     padding: 1rem 1.25rem;
+}
+
+.tarefa form {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.tarefa div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.tarefa button {
+    border: none;
+    background: none;
 }
