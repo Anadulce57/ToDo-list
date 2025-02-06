@@ -8,7 +8,7 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'))
 
 app.get('/', (request, response) => {
-    response.render('home')
+    response.render('home');
 })
 
 app.listen(3000, () => {
