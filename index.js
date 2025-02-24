@@ -8,8 +8,34 @@ app.set('view engine', 'handlebars')
 
 app.use(express.static('public'))
 
-app.get('/', (request, response) => {
-    response.render('home');
+//converter dados do formulário em objeto JavaScript
+app.use(express.urlencoded({
+    extended: true 
+}))
+
+app.use(express.json())
+
+//rotas
+app.post('/criar', (requisicao, resposta) =>{  // informação enviada - dentro do corpo de requisição
+    const descricao = requisicao.body.descricao
+    const completa = 0
+
+    const sql = `
+        INSERT INTO tarefas(descrical, completa)
+        VALUES ('${descricao}', '${completa}')
+    `
+
+    conexao.query(sql, (erro) => {
+        if (erro){
+            return console.log(erro)
+        }
+
+        resposta.redirect('/')
+    })
+})
+
+app.get('/', (requisicao, resposta) => {
+    resposta.render('home');
 })
 
 const conexao = mysql.createConnection({
