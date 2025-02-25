@@ -57,7 +57,7 @@ header{
     padding: 3rem 1.75rem 0;
 }
 
-header > div{ /*filha do header - div a primeira */
+header > div{ /*filho do header - div a primeira */
     max-width: 33.75rem;
     margin-inline: auto;
 }
