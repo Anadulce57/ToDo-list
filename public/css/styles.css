@@ -152,7 +152,7 @@ main{
     background: none;
 }
 
-.informaçoes {
+.informacoes {
     border-top: 1px solid var(--border-color);
     padding: 1rem 1.25rem;
     display: flex;
@@ -161,13 +161,13 @@ main{
     color: var(--info-text-color);
 }
 
-.informaçoes a,
+.informacoes a,
 .botoes a{
     text-decoration: none;
     color: var(--info-text-color);
 }
 
-.informaçoes .botoes {
+.informacoes .botoes {
     display: none;
 }
 
@@ -232,17 +232,17 @@ main{
         display: none;
     }
 
-    .informaçoes .botoes {
+    .informacoes .botoes {
         display: flex;  /*aparece*/
         padding: 0;
         margin: 0;
     }
 
-    .informaçoes {
+    .informacoes {
         font-size: 0.085rem;
     }
 
-    .informaçoes a:hover {
+    .informacoes a:hover {
         color: var(--info-button-hover);
     }
 
