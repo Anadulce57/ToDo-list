@@ -45,12 +45,12 @@ app.get('/', (requisicao, resposta) => {
         const tarefas = dados.map((dado) => {
             return{
                 id: dado.id,
-                descricao: dado.descricao,
+                descricao: dado.descrical,
                 completa: dado.completa === 0 ? false : true
             }
         })
     
-        resposta.render('home', {tarefas});
+        resposta.render('home', { tarefas });
     })
 })
 
